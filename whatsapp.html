@@ -3,35 +3,35 @@
 <body style="background-color:rgb(228,211,187);">
 <style>
   p.mar {
-    margin: 35px 500px;
+    margin: 35px 100px;
     text-align: justify;
   }
   h1.mar {
-    margin: 5px 500px;
+    margin: 5px 100px;
     color:rgb(50,41,80);
     text-align: justify;
   }
   h4.mar {
-    margin: 5px 500px;
+    margin: 5px 100px;
     color:rgb(50,41,80);
     text-align: justify;
   }
   h3.mar {
-    margin: 5px 500px;
+    margin: 5px 100px;
     color:rgb(50,41,80);
     text-align: justify;
   }
   h2.mar {
-    margin: 5px 500px;
+    margin: 5px 100px;
     color:rgb(50,41,80);
     text-align: justify;
   }
   a.mar {
-    margin: 10px 500px;
+    margin: 10px 100px;
     text-align: justify;
   }
   ul.mar {
-    margin: 10px 500px;
+    margin: 10px 100px;
     text-align: justify;
   }
   li.mar {
@@ -44,6 +44,157 @@
 <a class="mar", href="https://analoguethoughts.com/whatsappesp"> Version en español aquí!</a>
 
 <p class="mar">
+As you might have heard, Whatsapp announced a few months ago that it was updating its <a href="https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en">privacy policy</a>,
+causing a fairly big ruckus and a big number of people to migrate to a new messaging platform. The reaction was to some extent excessive, seeing that <a href="https://www.nytimes.com/2021/01/13/technology/whatsapp-data.html">
+not much has really changed</a>, but it probably was the straw breaking the camel's back for many, including me.
+Some of you have asked me about this since, so here I will attempt to explain my thoughts on this.
+It should be clear that I don't claim there is an inherently correct route of action; rather, a good decision is just an informed one. Also, please disagree with me!
+This is just a quick attempt at condensing some thoughts that have been brewing for some time (while fighting <b>very</b> basic HTML, excuse the poor formatting), with the main
+intention of starting a conversation. Agree or not, feel free to shoot me your thoughts and let's discuss privacy!
+</p>
+
+<p class="mar">
+Right, let's start with some background. In 2016, Whatsapp <a href="https://www.eff.org/deeplinks/2016/08/what-facebook-and-whatsapps-data-sharing-plans-really-mean-user-privacy-0">
+updated its privacy policy</a>, which if accepted gave Whatsapp permission to collect information about the user and share it with
+its parent company Facebook. This is not very different to what is happening now, except for a key difference: they allowed the user to opt out of their data being processed.
+Even though the time period where you could choose to opt out was limited to 30 days, it is likely that all of us were notified and had the choice at the time...
+think about it, when was the last time you didn't open Whatsapp in 30 days? (Btw, you can check whether you opted-out by requesting and downloading your account info, under Settings>Account). </p>
+
+<p class="mar">
+Back to the present, Whatsapp's recent move was to make this data sharing mandatory for all users, starting on February 8th (after the received backlash, Whatsapp decided to <a href="https://blog.whatsapp.com/giving-more-time-for-our-recent-update"> postpone the deadline</a>
+to May 15th, in a attempt to convince users the new privacy policy is not that bad). If you have not accepted the new terms by then, you will not
+be able to use the app anymore. Although this might come as a surprise to some, it is a natural move: Whatsapp was acquired in 2014 by Facebook, who payed for it the impressive amount of 19 billion dollars.
+While for some time, there was an annual cost of $1 per user, this didn't last long, so of course they need ways to monetize the app and recover their investment.
+</p>
+
+<p class="mar">
+I consider this ultimatum goes too far, and thus have decided it's probably time to move on, and so will delete Whatsapp in the next couple of days (I will still be reachable on
+ <a href="https://signal.org/">Signal</a> (same number), but you can also send me an SMS, call me, email me or mail me a letter
+(hit me up for any of my addresses)!. This is not an easy decision, regular communication is already hard enough as it is, and
+I use Whatsapp daily. However, I find our reliance on big tech companies services and the leverage this gives them on us worrying at the least, and I think this will make me
+sleep a bit better at night. This said, let's go over some natural questions in more detail. </p>
+
+<p class="mar"> A more in detail account of all this can be found in the following <a href="https://www.eff.org/deeplinks/2021/01/its-business-usual-whatsapp">
+  article by the EFF</a>
+</p>
+
+<h2 class="mar"> What information does Whatsapp collect? Can they read my conversations? </h2>
+<p class="mar">
+  First of all, no, Whatsapp, or the government, cannot read your conversations, or at least not likely. Whatsapp chats (like those of Signal,
+  iMessage, and pretty much any other respectable messaging app out there) use what is called end-to-end encryption (E2EE for short). What this means is that your messages are
+  encrypted by your phone before being sent (think of it as sending a package in the post with a padlock) using a key that only the recipient's phone has, thus making it impossible
+  for Whatsapp servers to read the communication in transit (same way the postman, lets assume your padlock is unpickable and unbreakable, would not be able to open your package).
+  Moreover, there is enough academic evidence on the security of the encryption schemes to rule out the possibility that even intelligence agencies can break it (that is, pick the lock);
+  and eventhough Whatsapp's code is not open source, it has passed enough security audits for us to trust it does what it is supposed to. Of course, nothing is bulletproof, a hacker,
+  government or whatnot could potentially hack into your phone and steal your keys or read the stored messages (just like that friend snooping through your phone while you are in the
+   bathroom)... more on this in the question below on Signal.
+</p>
+
+<p class="mar">
+   That cleared, what other information is there, you might ask? Well, lots, what is referred to as metadata, everything surrounding the actual data (our messages in this case).
+   This includes from the people you talk to, when, how often and for how long, to your location, IP address, phone model, operating system, network company or even battery level.
+   A much more in detail can be found on their <a href="https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en">privacy policy</a>. What I find the most worrying, however,
+   is the contacts information. To quote them: "We receive information about you from other users [...] they may provide your phone number, name, and other information
+   (like information from their mobile address book) just as you may provide theirs [...]. We require each of these users to have lawful rights to collect, use, and share your
+   information before providing any information to us.". A few things to take from here: first, if I have a contact saved with, say, their physical address, work phone and personal
+   email in my address book, I would be sending that information to Facebook by using Whatsapp (or so I interpret); second, privacy is not an individual choice, our privacy is influenced by the actions  of
+   our contacts, but let's discuss this further below; and third, what the hell does it mean for me to have "lawful rights to collect, use and share" your information? Will Whatsapp
+   be asking its users if they have this authority over each of their phone contact's information? Yeah, I doubt so too.
+</p>
+
+<p class="mar">
+   Finally, while this sounds scary, it might not actually be that bad right? On the one hand, Whatsapp/Facebook only want it to "improve their services", whatever that means,
+   and surely will take good care of it! On the other, how much information does metadata actually shed about me? Surely not much, right? I am afraid my views are quite
+   pessimistic with respect to both of these questions. With respect to the first, irrespective of what Facebook does with the data (and I already don't put much trust on them), the fact
+   that it is collected means it is out there, and therefore has the potential to leak and fall on someone else's hands. Indeed, data breaches happen everyday, and while big companies have a
+   lot more resources to secure their servers, this does not mean they are totally safe (a big list of <a href="https://www.upguard.com/blog/data-breach-statistics">statistics</a>
+   for the curious). As to the second question, metadata reveals much more information that we would expect - to not extend myself too much, I will link a short <a href="https://ssd.eff.org/en/module/why-metadata-matters">note</a>
+    by the EFF on what
+   could metadata reveal about you, and an <a href="https://www.theguardian.com/commentisfree/2016/feb/21/death-from-above-nia-csa-skynet-algorithm-drones-pakistan">article</a> from The Guardian
+   around the famous quote of "We kill based on metadata" by the CIA director.
+</p>
+
+<p class="mar">
+  Somewhat related to this is a recent and very ingenious <a href="https://signal.org/blog/the-instagram-ads-you-will-never-see/">advertising campaign</a>
+   by Signal, who decided to place adds on Instagram showing users the very information Facebook sells to target ads to them, worth a read.
+</p>
+
+<h2 class="mar"> What is Signal? How does it differ? </h2>
+<p class="mar">
+  Signal is a meesaging app built around privacy and security. The company is a nonprofit running on grants and user contributions, and thus does not log any information about its users.
+  Moreover, Signal has been a game changer in the messaging sphere: its founders published the first instant messaging protocol (dubbed the Double Ratchet) achieving strong resistance against key leakages (i.e. security
+  even if your encryption keys get hacked or stolen), formalized in a security notion called Post-Compromise Security (PCS), which I explain a bit below. Since then, PCS has become the
+  standard for any secure messaging app, and the Signal protocol (or modifications of it) is employed in a miriad other applications, from Whatsapp to Skype.
+
+  Not only that, Signal has been since working towards tools protecting users privacy as much as possible so that, for example, they <a href="https://signal.org/blog/signal-private-group-system/">
+    do not even have to store on their servers</a>
+  the identities of users in a given Signal group chat.
+</p>
+
+<p class="mar">
+As with anything out there, there are people who like Signal and people who don't, there are controversies around them receiving funding from government sources, about their decisions
+on the tension between security and usability... and its app has a lot of non-optimal aspects from a privacy perspective, like the fact that your identifier is tied to your phone number.
+All in all, it is the consensus in the security community (and it is my opinion) that it is the best tool we have for messaging, and the people behind it have shown a great compromise
+with their users privacy for a long time. Thus why I'm switching. Plus, you can use it from your computer without the annoyance of having to have your phone online too!
+</p>
+
+<h2 class="mar"> I heard Telegram is very secure, should I use it instead? </h2>
+<p class="mar">
+  In the past few weeks, lots of users have migrated to <a href="https://telegram.org/">Telegram</a>, more famous among the general public than Signal. While Telegram
+   might boast some nice features, like the possibility of creating huge groups, its reputation for being a super secure alternative to Whatsapp is something that I can only understand
+   as the result of a marketing team that deserves a raise. Hell, if my alternative to Whatsapp was Telegram, I would stick with our green and white friend!
+   <a href="https://www.wired.com/story/telegram-encryption-whatsapp-settings/"> This article</a> by Wired gives a nice overview, but let me give you a few reasons: </p>
+   <ul class="mar">
+    <li class="mar">First, and foremost, Telegram chats are not end-to-end encrypted by default! Instead, they are only client-side encrypted. Following our previous analogy of the padlock,
+      this means that the key opening the padlock is now not that of whomever you are talking to, but the postman's. They will then open your padlock, remove it, and forward the package,
+      with a new padlock intended for the recipient to open. Of course, this prevents anyone other than the postman from peeping into the contents of your package, but you
+      need to trust your postman! Translated to messaging, Telegram <b>can</b> read your messages (and, in fact, stores them on their servers)!
+      And sure, you might trust them, but what if government X decides to pressure them into sharing some with them, or what if their servers get hacked?
+
+      "Fine - I hear you say - but whatever, I can choose to have my conversations end-to-end encrypted". True, but this needs to be activated individually for every conversation, which
+      in practice means most conversations will not be (properly) encrypted (note, Whatsapp does encrypt all conversations by default). How many people will not know about
+      this? How many that do care and know will forget at some point? Moreover, even if everyone that cares always remembered about it, this creates an unnecessary differentiation
+      between users. "If you have nothing to hide, why would you choose to hide your communications", it singles out the users who choose to activate it.
+      See, for example, the case of <a href="https://www.cnet.com/news/nsa-likely-targets-anybody-whos-tor-curious/"> using Tor</a>, a browser that anonymizes your traffic.
+      Privacy, (E2E) encryption in this case, should be by default! </li>
+    <li class="mar"> Telegram group chats are not E2E encrypted, not by default, nor by choice. Again, this means that Telegram has access to and stores the content of all your group conversations.</li>
+    <li class="mar"> Their encryption protocol is shady from a technical viewpoint. Academics from around the world collectively work to design protocols that are the most secure possible.
+    It is in most cases impossible to mathematically prove a protocol fully secure, but based on years of rigourous analysis and research, it is fair to say that we can have high
+    confidence in the robustness of a certain set of protocols and approaches that are applied in most of our daily online activities, from connecting to your bank account
+    to uploading files to the cloud. Telegram developers, however, decided to ignore the plethora of existing literature and design their own encryption scheme, essentially from scratch.
+    As Matt Green, cryptography professor puts it in the article above: "It's like if everyone else in the world has agreed that we're going to use drywall to do the walls in a house,
+    and then you've got somebody who's using toothpaste. Even if the toothpaste works and makes a nice wall, that's weird. How do you know they're not doing other weird,
+    nonstandard things when they put the electrical wiring into the house? And that's what scares me." </li>
+    <li class="mar"> Telegram's protocol aims for weaker security guarantees than Whatsapp/Signal. In particular, the latter (and many others) provide something call
+      <a href="https://people.cispa.io/cas.cremers/downloads/papers/CCG-CSF2016-PCS.pdf">
+      Post-Compromise Security</a> (PCS), which aims
+    to provide some security even in case the encryption keys get compromised (e.g. because your phone got hacked). Imagine that for every package you send to your friend Tom you use a
+     different padlock with a different key; even if someone steals your key, or Tom's, or makes a copy, this will only allow them to open one of the packages
+     (broadly, someone trying to spy your communications would have to steal every single one of your keys, which is much harder and much more easily detectable).
+     Note that there is an inherent tension between PCS and functionality: if you lose your keys because your phone falls in the toilet, you might want to be able to recover
+     access to your account and decrypt messages your phone received while scuba-diving.
+    Different messengers achieve therefore different levels of PCS (see <a href="https://benjaminkiesl.github.io/publications/clone_detection_in_secure_messaging_cremers_fairoze_kiesl_naska.pdf">
+      this paper</a> analyzing this), but Telegram does not even attempt to achieve any such security.</li>
+   </ul>
+   <p class="mar">Now, with this I do not mean to say Telegram's security is non-existent and that whatever you type and send will automatically be forwarded to the NSA or some north korean hackers.
+   I do mean, however, that the security it gives you is much inferior than that of Signal or Whatsapp.</p>
+
+<h2 class="mar"> Will ditching Whatsapp change anything? Should I do it? </h2>
+<p class="mar">
+  No, probably not, for many reasons. First, the information is already there, Whatsapp is likely not the only company you trust with your info. You probably use Facebook, Google, etc,
+  escaping tracking is hard without very strict and proactive strategies. Even if you take the most care in protecting your privacy, privacy is not individual.
+  The moment you interact with others, you subject your privacy to them: you can store your photos encrypted, never publish your post address, or sign your email with a pseudonym,
+  but what's the use of it if your friend will upload the photos to their instagram, keep your address stored in his phone and synchronized with the cloud, and send you unencrypted emails
+  starting with your name?
+  One could say that it is little more than an inconvenience that one impose on oneself, and it probably partly right, but one's got to try, right? ;)
+
+</p>
+
+
+
+</body>
+</html>
+
 As you might have heard, Whatsapp announced a few months ago that it was updating its <a href="https://www.whatsapp.com/legal/updates/privacy-policy/?lang=en">privacy policy</a>,
 causing a fairly big ruckus and a big number of people to migrate to a new messaging platform. The reaction was to some extent excessive, seeing that <a href="https://www.nytimes.com/2021/01/13/technology/whatsapp-data.html">
 not much has really changed</a>, but it probably was the straw breaking the camel's back for many, including me.
